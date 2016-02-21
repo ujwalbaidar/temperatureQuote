@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<base href="/">
+		<title>Humidity Sensor</title>
+		<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+		<script src="/assets/js/angular.min.js"></script>
+		<script src="/assets/js/angular-resource.min.js"></script>
+		<script src="/assets/js/angular-route.min.js"></script>
+		<script src="/assets/js/ui-bootstrap.min.js"></script>
+		
+		<script src="app.js"></script>
+
+		<script src="apps/dashboard/dashboard.js"></script>
+		<script src="apps/dashboard/dashboard.controller.js"></script>
+
+		<script src="apps/user/authenticate.js"></script>
+		<script src="apps/user/login.controller.js"></script>
+		<script src="apps/user/signup.controller.js"></script>
+	</head>
+	<body ng-app="humidityApp">
+		<div class="container">
+			<ui-view></ui-view>
+		</div>
+	</body>
+</html>
