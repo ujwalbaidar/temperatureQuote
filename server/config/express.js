@@ -8,7 +8,7 @@ module.exports = function(app, config) {
     app.use(bodyParser.json());
     
     app.use(express.static(config.rootPath + '/client'));
-
+    app.use(express.favicon(config.rootPath + '/client/favicon.ico'));
     app.set('views', config.rootPath + '/client');
     app.engine('html', require('ejs').renderFile);
     app.set('view engine', 'html');
